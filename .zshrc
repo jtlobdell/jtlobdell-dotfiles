@@ -46,3 +46,6 @@ PS1='%F{red}%n@%m %~ $ %F{white}'
 
 # rbenv
 eval "$(rbenv init -)"
+
+TERM=xterm
+
