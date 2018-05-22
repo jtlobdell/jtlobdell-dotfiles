@@ -7,7 +7,7 @@
   (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
 (package-initialize)
 
-(setq package-list '(helm-xref helm-projectile lua-mode highlight-symbol helm ggtags flx-ido))
+(setq package-list '(helm-xref helm-projectile lua-mode highlight-symbol helm ggtags))
 
 ;; activate all the packages
 (package-initialize)
@@ -209,12 +209,3 @@
 ;; Stop polluting my working directory
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
 
-
-;; ido-flx
-(require 'flx-ido)
-(ido-mode 1)
-(ido-everywhere 1)
-(flx-ido-mode 1)
-;; disable ido faces to see flx highlights.
-(setq ido-enable-flex-matching t)
-(setq ido-use-faces nil)
