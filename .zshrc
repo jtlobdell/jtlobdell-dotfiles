@@ -49,3 +49,8 @@ eval "$(rbenv init -)"
 
 TERM=xterm
 
+# support local (machine-specific) config
+if [ -f ~/.zshrc.local ]; then
+	source ~/.zshrc.local
+fi
+
