@@ -47,7 +47,7 @@ PS1='%F{red}%n@%m %~ $ %F{white}'
 # rbenv
 eval "$(rbenv init -)"
 
-TERM=xterm
+TERM=rxvt-unicode
 
 # support local (machine-specific) config
 if [ -f ~/.zshrc.local ]; then
