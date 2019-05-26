@@ -209,3 +209,5 @@
 ;; Stop polluting my working directory
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
 
+;; Remove C-z (suspend emacs) because I keep hitting it accidentally
+(global-unset-key "\C-z")
