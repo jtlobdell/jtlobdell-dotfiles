@@ -220,4 +220,8 @@
 ;; Stop polluting my working directory
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
 
+;; org mode -- collapse section when tab is hit with cursor inside section
 (setq org-cycle-emulate-tab 'white)
+
+;; Remove C-z (suspend emacs) because I keep hitting it accidentally
+(global-unset-key "\C-z")
