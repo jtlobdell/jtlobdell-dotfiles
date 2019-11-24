@@ -223,5 +223,7 @@
 ;; org mode -- collapse section when tab is hit with cursor inside section
 (setq org-cycle-emulate-tab 'white)
 
-;; Remove C-z (suspend emacs) because I keep hitting it accidentally
+;; Unset these because I constantly minimize emacs when I'm saving
 (global-unset-key "\C-z")
+(global-unset-key "\C-xz")
+(global-unset-key "\C-x\C-z")
