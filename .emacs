@@ -163,6 +163,10 @@
 (setq helm-buffers-fuzzy-matching t
       helm-recentf-fuzzy-match    t)
 
+;; unset default 'buffer list' command. it's very annoying to accidentally
+;; split the pane when I meant to use helm.
+(global-unset-key (kbd "C-x C-b"))
+
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 
 (when (executable-find "ack-grep")
