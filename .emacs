@@ -227,3 +227,6 @@
 (global-unset-key "\C-z")
 (global-unset-key "\C-xz")
 (global-unset-key "\C-x\C-z")
+
+;; Org-mode: Collapse a section while in that section
+(setq org-cycle-emulate-tab 'white)
